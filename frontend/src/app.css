@@ -1,0 +1,16 @@
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-navbar{
+width: 100%;
+}
+
+@media screen and (width<560px) {
+    .book-navbar{
+        display: none;
+    }
+}

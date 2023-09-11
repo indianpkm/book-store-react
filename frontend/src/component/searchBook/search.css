@@ -1,0 +1,101 @@
+.search-component{
+  display: flex;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+  gap: 1rem;
+}
+
+.logo-box{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  gap: .2rem;
+  justify-content: center;
+}
+.logo-box>img{
+  width: 70px;
+  height:auto;
+}
+
+.search-box{
+  background-color: #fff;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    border-radius: 22px;
+    padding: .5rem;
+}
+
+.search-box>input{
+    padding: 5px;
+    margin-right: 1rem;
+    border: none;
+    outline: none;
+    width: 95%;
+}
+
+.basket-button {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    padding: 8px 16px; 
+    border-radius: 22px; 
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    gap: .4rem;
+  }
+
+  .basket-button:hover {
+    background-color: #0056b3; 
+  }
+  
+  @media screen and (760px<width<=850px) {
+    .logo-box{
+        width: 20%;
+    }
+    .search-box{
+      margin-left: auto;
+      width: 50%;
+    }
+    .basket-button{
+      margin-right: 2rem;
+    }
+}
+
+@media screen and (560px<width<=760px) {
+  .logo-box{
+      display: none;
+  }
+  .search-component{
+    display: flex;
+    justify-content: center;
+  }
+  .search-box{
+    width: 50%;
+  }
+}
+
+@media screen and (width<=560px) {
+  .basket-button{
+    display: none;
+  }
+  .search-box{
+    width: 80%;
+  }
+  .search-component{
+    height: 34%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .logo-box{
+    display: none;
+  }
+}

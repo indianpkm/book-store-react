@@ -1,0 +1,41 @@
+.hamburger-component{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 1rem 1rem 0 1rem;
+    height: 10%;
+}
+
+.hamburger-basket-button {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    padding: 5px 16px; 
+    border-radius: 22px; 
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    font-size: .9rem;
+    gap: .3rem;
+  }
+
+  .hamburger-basket-button:hover {
+    background-color: #0056b3; 
+  }
+
+
+@media screen and (width<=560px) {
+    .hamburger-component{
+        display: flex;
+    }
+    .hamburger-book-navbar{
+        width: 94%;
+        position: absolute;
+        margin-top: 30%;
+        background-color: #fff;
+        border-radius: 1rem;
+    }
+  }
+  

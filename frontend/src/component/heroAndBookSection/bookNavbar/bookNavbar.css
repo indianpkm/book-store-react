@@ -1,0 +1,39 @@
+.book-navbar-container{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    color: #4e4e4e;
+    justify-content: center;
+    gap: 2rem;
+    font-weight: 600;
+}
+
+.book-navbar-container>p{
+    cursor: pointer;
+    margin: 14px;
+}
+
+.book-navbar-container>p:hover{
+    color: #0056b3; 
+}
+
+@media screen and (750px<=width<=850px) {
+    .book-navbar-container{
+        gap: 1rem;
+    }
+}
+
+@media screen and (640px<=width<750px) {
+    .book-navbar-container{
+        gap: .1rem;
+    }
+}
+
+@media screen and (560px<=width<640px) {
+    .book-navbar-container>p{
+        margin: 5px;
+    }
+    .book-navbar-container{
+        gap: .4rem;
+    }
+}
